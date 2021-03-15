@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css?family=McLaren|Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 0px) {
+  .time-display {
+    font-size: 3rem;
+  }
+  .time-display .date-text {
+    font-size: 1rem;
+  }
+  .login-form {
+    min-width: 100vw;
+    top: 25% !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .time-display {
+    position: absolute;
+    bottom: 0;
+    font-size: 4rem;
+  }
+  .time-display .date-text {
+    font-size: 2rem;
+  }
+  .login-form {
+    min-width: 25vw;
+  }
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/wallpaper.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+body .time-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
+}
+
+body .time-display .date-text {
+  font-family: 'McLaren', cursive;
+}
+
+body .login-form {
+  height: 500px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  padding: 80px 40px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .login-form .profile-pic {
+  border-radius: 50%;
+  border: 3px solid #fa97ab;
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background: url(../img/profilepic.jpg);
+}
+
+body .login-form i {
+  position: absolute;
+  padding: 10px;
+  left: -32px;
+}
+
+body .login-form .text-body {
+  border-bottom: 2px solid #55ae95;
+  position: relative;
+  margin-top: 3.5rem;
+  padding: 5px;
+}
+
+body .login-form .text-body input {
+  font-size: 15px;
+  color: white;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 5px;
+  height: 40px;
+}
+
+body .login-form .text-body span::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: rgba(253, 119, 146, 0.4);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body .login-form .text-body span::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 0%;
+  height: 2px;
+  background: #fd7792;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body .login-form .text-body .focus + span::before {
+  top: -5px;
+  color: #fd7792;
+}
+
+body .login-form .text-body .focus + span::after {
+  width: 100%;
+}
+
+body .login-form .login-btn {
+  margin-top: 1rem;
+  width: 80%;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  background: linear-gradient(120deg, #7cdfc3, #fd7792);
+  background-size: 350%;
+  -webkit-box-shadow: 0px 0px 6px 6px rgba(253, 119, 146, 0.3);
+          box-shadow: 0px 0px 6px 6px rgba(253, 119, 146, 0.3);
+  font-size: 1.5rem;
+  color: white;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+body .login-form .login-btn i {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+}
+
+body .login-form .login-btn:hover {
+  background-position: right;
+}
+
+body .login-form .login-btn:focus {
+  background-position: right;
+}
+
+body .login-form .bottom-text {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+  top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffac8e;
+}
+
+body .login-form .bottom-text a {
+  color: #6da6fc;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=main.css.map */

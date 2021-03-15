@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Student | Dashboard</title>
+
+  <!-- Normalize browser inconsistencies -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <script defer src="./js/fontawesome-all.min.js"></script>
+  <!-- MD Bootstrap -->
+  <link rel="stylesheet" href="./css/mdb.min.css">
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <style>
+    /* Scrollbar styling */
+
+    body::-webkit-scrollbar {
+      width: 9px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-image: linear-gradient(40deg, #45cafc, #303f9f);
+    }
+
+    body::-webkit-scrollbar-track {
+      background-color: rgb(230, 223, 223);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Wrapper stretches to the whole viewport height -->
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar" class="navbar sticky-top">
+      <div class="navbar-header">
+        <img src="./img/drake-ramoray.jpg" class="rounded-circle" alt="Profile picture">
+        <h5 class="navbar-brand m-1 text-white pl-2">Dr. Drake Ramoray</h5>
+      </div>
+
+      <!-- Navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a href="./index.html" class="nav-link btn btn-block btn-lg">
+            <i class="fas fa-newspaper fa-lg mr-1"></i>
+            <span>My Profile</span>
+            <span class="badge red d-flex align-items-center justify-content-center">New</span>
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="./resources.html" class="nav-link btn btn-block btn-lg">
+            <i class="fas fa-file-alt fa-lg mr-1"></i>
+            <span>List of students</span>
+            <span class="badge badge-pill green d-flex align-items-center justify-content-center">14</span>
+          </a>
+        </li>
+        
+      </ul>
+    </nav>
+
+    <!-- Main -->
+    <main>
+      <!-- Topbar -->
+      <nav id="topbar" class="navbar navbar-expand-md sticky-top">
+        <!-- sidebar toggle button -->
+        <button id="topbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse">
+          <span class="fas fa-align-left"></span>
+        </button>
+        <!-- topbar items toggle button -->
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#topbar-items">
+          <span class="fas fa-ellipsis-v"></span>
+        </button>
+        <!-- topbar items -->
+        <div class="navbar-collapse collapse" id="topbar-items">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" href="#">
+                <i class="fa fa-envelope"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" href="#">
+                <i class="fas fa-credit-card"></i>
+                <span>Logout</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link waves-effect waves-light dropdown-toggle" id="dropdown-items" data-toggle="dropdown">
+                <img src="img/drake-ramoray.jpg" class="rounded-circle" alt="profile picture">
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-secondary">
+                <a class="dropdown-item waves-effect waves-light" href="#">Profile</a>
+                <a class="dropdown-item waves-effect waves-light" href="#">Feedback</a>
+                <a class="dropdown-item waves-effect waves-light" href="#">Log Out</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Content -->
+      <div class="content">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="product-payment-inner-st">
+                            
+                            <div id="myTabContent" class="tab-content custom-product-edit">
+                                <div class="product-tab-list tab-pane fade active in" id="description">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div id="dropzone1" class="pro-ad">
+                                                    <form action="#" class="dropzone dropzone-custom needsclick add-professors" id="demo1-upload">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <input name="number" type="text" class="form-control" placeholder="Fly Zend" value="Fly Zend">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" placeholder="E104, catn-2, UK." value="E104, catn-2, UK.">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" placeholder="12/10/1993" value="12/10/1993">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="number" class="form-control" placeholder="1213" value="1213">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="number" class="form-control" placeholder="01962067309" value="01962067309">
+                                                                </div>
+                                                                <div class="form-group alert-up-pd">
+                                                                    <div class="dz-message needsclick download-custom">
+                                                                        <i class="fa fa-download edudropnone" aria-hidden="true"></i>
+                                                                        <h2 class="edudropnone">Drop image here or click to upload.</h2>
+                                                                        <p class="edudropnone"><span class="note needsclick">(This is just a demo dropzone. Selected image is <strong>not</strong> actually uploaded.)</span>
+                                                                        </p>
+                                                                        <input name="imageico" class="hd-pro-img" type="text">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" placeholder="CSE" value="CSE">
+                                                                </div>
+                                                                <div class="form-group edit-ta-resize res-mg-t-15">
+                                                                    <textarea name="description">Lorem ipsum dolor sit amet of, consectetur adipiscing elitable. Vestibulum tincidunt est vitae ultrices accumsan.</textarea>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <select class="form-control">
+																		<option>Male</option>
+																		<option>Male</option>
+																		<option>Female</option>
+																	</select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <select class="form-control">
+																			<option>Nepal</option>
+																			<option>India</option>
+																			<option>Pakistan</option>
+																			<option>Amerika</option>
+																			<option>China</option>
+																			<option>Dubai</option>
+																			<option>Nepal</option>
+																		</select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <select class="form-control">
+																			<option>Maharastra</option>
+																			<option>Gujarat</option>
+																			<option>Maharastra</option>
+																			<option>Rajastan</option>
+																			<option>Maharastra</option>
+																			<option>Rajastan</option>
+																			<option>Gujarat</option>
+																		</select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <select class="form-control">
+																			<option>Baroda</option>
+																			<option>Surat</option>
+																			<option>Baroda</option>
+																			<option>Navsari</option>
+																			<option>Baroda</option>
+																			<option>Surat</option>
+																		</select>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control" placeholder="www.uttara.com" value="www.uttara.com">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="payment-adress">
+                                                                    <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-tab-list tab-pane fade" id="reviews">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="devit-card-custom">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" placeholder="Email" value="Admin@gmail.com">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="number" class="form-control" placeholder="Phone" value="01962067309">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="password" class="form-control" placeholder="Password" value="#123#123">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="password" class="form-control" placeholder="Confirm Password" value="#123#123">
+                                                            </div>
+                                                            <a href="#!" class="btn btn-primary waves-effect waves-light">Submit</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-tab-list tab-pane fade" id="INFORMATION">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+												<div class="row">
+													<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+														<div class="devit-card-custom">
+															<div class="form-group">
+																<input type="url" class="form-control" placeholder="Facebook URL" value="http://www.facebook.com">
+															</div>
+															<div class="form-group">
+																<input type="url" class="form-control" placeholder="Twitter URL" value="http://www.twitter.com">
+															</div>
+															<div class="form-group">
+																<input type="url" class="form-control" placeholder="Google Plus" value="http://www.google-plus.com">
+															</div>
+															<div class="form-group">
+																<input type="url" class="form-control" placeholder="Linkedin URL" value="http://www.Linkedin.com">
+															</div>
+															<button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+														</div>
+													</div>
+												</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Bootstrap dependencies -->
+  <!-- First jQuery, then Popper.js and lastly Bootstrap JS -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="js/mdb.min.js"></script>
+  <!-- Custom script -->
+  <script src="./js/scripts.js"></script>
+  <script>
+    $('table tbody tr').each(function (index, row) {
+      if ($(this).children('td.grade')[0].textContent === 'F') {
+        $(this).addClass('table-danger');
+      }
+    });
+  </script>
+</body>
+
+</html>
