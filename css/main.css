@@ -19,6 +19,9 @@
     top: 25% !important;
   }
 }
+.text{
+     overflow: hidden;
+}
 
 @media screen and (min-width: 1024px) {
   .time-display {
