@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\e2e",
+    "\\e2e\\src",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\admin",
+    "\\src\\app\\admin\\create-page",
+    "\\src\\app\\admin\\dashboard-page",
+    "\\src\\app\\admin\\edit-page",
+    "\\src\\app\\admin\\login-page",
+    "\\src\\app\\post-page"
+  ],
+  "SelectedNode": "\\src\\app\\shared\\auth.interceptor.ts",
+  "PreviewInSolutionExplorer": false
+}
